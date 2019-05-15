@@ -12,6 +12,9 @@
 		7FE00E62228BE776000D77EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE00E60228BE776000D77EB /* Main.storyboard */; };
 		7FE00E64228BE776000D77EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE00E63228BE776000D77EB /* Assets.xcassets */; };
 		7FE00E67228BE776000D77EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE00E65228BE776000D77EB /* LaunchScreen.storyboard */; };
+		7FE00E6F228BE7C1000D77EB /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE00E6E228BE7C1000D77EB /* CoffeeMachine.swift */; };
+		7FE00E71228C0323000D77EB /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE00E70228C0323000D77EB /* Machine.swift */; };
+		7FE00E73228C052A000D77EB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE00E72228C052A000D77EB /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		7FE00E63228BE776000D77EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FE00E66228BE776000D77EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FE00E68228BE776000D77EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FE00E6E228BE7C1000D77EB /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		7FE00E70228C0323000D77EB /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		7FE00E72228C052A000D77EB /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				7FE00E5C228BE776000D77EB /* AppDelegate.swift */,
+				7FE00E6E228BE7C1000D77EB /* CoffeeMachine.swift */,
+				7FE00E70228C0323000D77EB /* Machine.swift */,
 				7FE00E5E228BE776000D77EB /* ViewController.swift */,
+				7FE00E72228C052A000D77EB /* RoundedButton.swift */,
 				7FE00E60228BE776000D77EB /* Main.storyboard */,
 				7FE00E63228BE776000D77EB /* Assets.xcassets */,
 				7FE00E65228BE776000D77EB /* LaunchScreen.storyboard */,
@@ -135,6 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE00E6F228BE7C1000D77EB /* CoffeeMachine.swift in Sources */,
+				7FE00E73228C052A000D77EB /* RoundedButton.swift in Sources */,
+				7FE00E71228C0323000D77EB /* Machine.swift in Sources */,
 				7FE00E5F228BE776000D77EB /* ViewController.swift in Sources */,
 				7FE00E5D228BE776000D77EB /* AppDelegate.swift in Sources */,
 			);
