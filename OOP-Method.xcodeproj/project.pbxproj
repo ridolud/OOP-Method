@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5089F6228D63CD00D6D0AD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5089F5228D63CD00D6D0AD /* DetailViewController.swift */; };
 		7FE00E5D228BE776000D77EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE00E5C228BE776000D77EB /* AppDelegate.swift */; };
 		7FE00E5F228BE776000D77EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE00E5E228BE776000D77EB /* ViewController.swift */; };
 		7FE00E62228BE776000D77EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE00E60228BE776000D77EB /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F5089F5228D63CD00D6D0AD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7FE00E59228BE776000D77EB /* OOP-Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OOP-Method.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE00E5C228BE776000D77EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FE00E5E228BE776000D77EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				7FE00E6E228BE7C1000D77EB /* CoffeeMachine.swift */,
 				7FE00E70228C0323000D77EB /* Machine.swift */,
 				7FE00E5E228BE776000D77EB /* ViewController.swift */,
+				7F5089F5228D63CD00D6D0AD /* DetailViewController.swift */,
 				7FE00E72228C052A000D77EB /* RoundedButton.swift */,
 				7FE00E60228BE776000D77EB /* Main.storyboard */,
 				7FE00E63228BE776000D77EB /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				7FE00E6F228BE7C1000D77EB /* CoffeeMachine.swift in Sources */,
 				7FE00E73228C052A000D77EB /* RoundedButton.swift in Sources */,
 				7FE00E71228C0323000D77EB /* Machine.swift in Sources */,
+				7F5089F6228D63CD00D6D0AD /* DetailViewController.swift in Sources */,
 				7FE00E5F228BE776000D77EB /* ViewController.swift in Sources */,
 				7FE00E5D228BE776000D77EB /* AppDelegate.swift in Sources */,
 			);
