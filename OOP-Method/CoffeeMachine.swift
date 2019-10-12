@@ -9,13 +9,14 @@
 import Foundation
 
 class CoffeeMachine: Machine {
-    var numOfBeens: Int = 100
+    var numOfBeens: Int
     var numOfMilk: Int
     var brand: String
     
-    init(milk: Int, brand: String) {
+    init(milk: Int, coffe: Int, brand: String) {
         self.numOfMilk = milk
         self.brand = brand
+        self.numOfBeens = coffe
     }
     
     func addMilk(milk: Int){
@@ -27,8 +28,8 @@ class CoffeeMachine: Machine {
     }
     
     func makeCoffe() {
-        self.numOfBeens -= 2
-        self.numOfMilk -= 1
+        self.numOfBeens = 0
+        self.numOfMilk = 0
     }
     
 }
