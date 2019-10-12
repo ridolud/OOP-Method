@@ -14,9 +14,8 @@ class ViewController: UIViewController{
     @IBOutlet weak var milkLabel: UILabel!
     
     @IBOutlet weak var fullName: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
     
-    var coffeMachine: CoffeeMachine = .init(milk: 200, brand: "Honda")
+    var coffeMachine: CoffeeMachine = .init(milk: 0, coffe: 0, brand: "Honda")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +24,6 @@ class ViewController: UIViewController{
         print(coffeMachine.voltage)
         
         fullName.delegate = self
-        passwordField.delegate = self
     }
     
     func updateCoffee() {
@@ -34,12 +32,12 @@ class ViewController: UIViewController{
     }
     
     @IBAction func addCoffee(_ sender: UIButton) {
-        coffeMachine.addBeens(beens: 60)
+        coffeMachine.addBeens(beens: 1)
         updateCoffee()
     }
     
     @IBAction func addMilk(_ sender: UIButton) {
-        coffeMachine.addMilk(milk: 20)
+        coffeMachine.addMilk(milk: 1)
         updateCoffee()
     }
     @IBAction func makeCoffee(_ sender: UIButton) {
@@ -53,6 +51,8 @@ class ViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetail", let destination = segue.destination as? DetailViewController {
             destination.nameFromPReviosView = fullName.text
+            destination.totalCoffeePreviousView = String(coffeMachine.numOfBeens)
+            destination.totalMilkPreviousView = String(coffeMachine.numOfMilk)
         }
     }
 }
@@ -65,10 +65,8 @@ extension ViewController: UITextFieldDelegate {
                 self.present(alert, animated: true, completion: nil)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             }
-            passwordField.becomeFirstResponder()
-        }else{
-            passwordField.resignFirstResponder()
         }
+        
         return true
     }
 }

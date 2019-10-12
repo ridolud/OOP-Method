@@ -10,11 +10,18 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var totalCoffee: UILabel!
+    @IBOutlet weak var totalMilk: UILabel!
+    
     var nameFromPReviosView: String?
+    var totalCoffeePreviousView: String?
+    var totalMilkPreviousView: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            detailLabel.text = nameFromPReviosView
+        detailLabel.text = nameFromPReviosView
+        totalCoffee.text = totalCoffeePreviousView
+        totalMilk.text = totalMilkPreviousView
         // Do any additional setup after loading the view.
     }
 
